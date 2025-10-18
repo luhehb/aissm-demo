@@ -1,146 +1,99 @@
-import React from 'react';
+// src/pages/Home.jsx
+import React from "react";
+import { CheckCircle2 } from "lucide-react";
+import hero from "./assets/home-hero.png"; // 请替换为你的图片路径，或使用 public 目录：src="/your-image.png"
 
-const Solutions = () => {
+const Home = () => {
   return (
-    <div className="space-y-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-800 mb-2">产品和解决方案</h1>
-        <p className="text-slate-600">为企业提供全方位的 AI 安全治理解决方案</p>
-      </div>
-
-      {/* SafeWork 产品系列 */}
-      <div className="space-y-8">
-        {/* SafeWork 介绍 */}
-        <div className="bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 rounded-2xl p-12 text-white">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl font-bold mb-6">SafeWork</h2>
-            <p className="text-2xl text-blue-100 leading-relaxed">
-              解决 AI 从模型到应用的全生命周期各阶段风险问题
-            </p>
-          </div>
-        </div>
-
-        {/* SafeWork T1 和 R1 */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* SafeWork - T1 */}
-          <div className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-900 via-blue-800 to-indigo-900 shadow-2xl">
-            {/* 背景装饰 */}
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAgTSAwIDIwIEwgNDAgMjAgTSAyMCAwIEwgMjAgNDAgTSAwIDMwIEwgNDAgMzAgTSAzMCAwIEwgMzAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
-
-            {/* 顶部图片区域 */}
-            <div className="relative h-48 bg-gradient-to-br from-blue-500/30 to-purple-500/30 backdrop-blur flex items-center justify-center border-b border-white/10">
-              <div className="text-6xl font-bold text-white/20">T1</div>
-            </div>
-
-            {/* 内容区域 */}
-            <div className="relative p-8 text-white">
-              <h3 className="text-3xl font-bold mb-4">SafeWork - T1</h3>
-              <p className="text-blue-100 leading-relaxed mb-6 min-h-[80px]">
-                集合多个独立模块提供端到端模型治理平台，为大模型注入多维度安全治理能力
+    <main className="w-full">
+      <section className="bg-transparent">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            {/* 左侧：文案 */}
+            <div className="lg:col-span-6">
+              <p className="text-slate-500 dark:text-slate-400 uppercase tracking-wider text-xs">
+                演示页面 · MOCK 文案
               </p>
 
-              <div className="pt-4 border-t border-white/10">
-                <button className="px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 group-hover:gap-3">
-                  了解更多
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+              {/* 标题：在浅底上使用深色，深色主题下切到白色 */}
+              <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 dark:text-white leading-tight">
+                AI 安全治理与评估
+              </h1>
+
+              {/* 正文：加深到 slate-700；深色主题下为 slate-300 */}
+              <p className="mt-5 text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base max-w-prose">
+                本演示聚焦人工智能系统在研发、部署与运营阶段的安全与合规治理。内容涵盖模型风险识别、
+                输出合规审查、数据与权限控制，以及面向关键业务场景的持续监测与评估。页面仅用于说明布局与
+                样式，所有数据与文本均为前端 Mock。
+              </p>
+
+              {/* 要点：标题词更深，正文为 slate-800；深色下切到浅色 */}
+              <ul className="mt-6 space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 text-slate-600 dark:text-slate-300" />
+                  <span className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed">
+                    <strong className="text-slate-900 dark:text-white">模型风险识别：</strong>
+                    关注越狱提示、提示注入、幻觉与敏感输出的触发条件，结合测试用例与规则策略降低风险暴露。
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 text-slate-600 dark:text-slate-300" />
+                  <span className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed">
+                    <strong className="text-slate-900 dark:text-white">内容合规审查：</strong>
+                    针对涉政、暴恐、隐私、版权等高风险类别进行自动化与人工复核的联合把关。
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 text-slate-600 dark:text-slate-300" />
+                  <span className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed">
+                    <strong className="text-slate-900 dark:text-white">数据与权限治理：</strong>
+                    最小化采集与使用，敏感字段脱敏与加密存储，配合细粒度访问控制。
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 text-slate-600 dark:text-slate-300" />
+                  <span className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed">
+                    <strong className="text-slate-900 dark:text-white">审计与可追溯：</strong>
+                    记录关键行为、版本与策略变更，支持审计取证与责任界定。
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 text-slate-600 dark:text-slate-300" />
+                  <span className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed">
+                    <strong className="text-slate-900 dark:text-white">持续评估：</strong>
+                    上线前进行安全评估，上线后引入监测与告警闭环，周期性复盘与优化。
+                  </span>
+                </li>
+              </ul>
+
+              {/* 说明文本：在浅底上使用 slate-500；深色下为 slate-400 */}
+              <p className="mt-6 text-xs text-slate-500 dark:text-slate-400">
+                * 本页面仅用于样式与布局演示，数据与文案均为 Mock。
+              </p>
+            </div>
+
+            {/* 右侧：图片容器（不改变整体色调，仅优化视觉层次） */}
+            <div className="lg:col-span-6">
+              <div className="relative">
+                <div className="rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700/60 shadow-xl bg-white dark:bg-slate-800">
+                  <img
+                    src={hero}
+                    alt="AI 安全治理相关示意图"
+                    className="w-full h-[240px] sm:h-[300px] lg:h-[380px] object-cover"
+                  />
+                </div>
+                {/* 柔和底部光晕：浅色与深色分别处理 */}
+                <div
+                  aria-hidden="true"
+                  className="absolute -inset-x-6 -bottom-6 h-24 blur-2xl opacity-30 rounded-full -z-10 bg-gradient-to-r from-slate-200 via-slate-300 to-slate-200 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800"
+                />
               </div>
             </div>
           </div>
-
-          {/* SafeWork - R1 */}
-          <div className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-900 via-blue-800 to-cyan-900 shadow-2xl">
-            {/* 背景装饰 */}
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAgTSAwIDIwIEwgNDAgMjAgTSAyMCAwIEwgMjAgNDAgTSAwIDMwIEwgNDAgMzAgTSAzMCAwIEwgMzAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
-
-            {/* 顶部图片区域 */}
-            <div className="relative h-48 bg-gradient-to-br from-cyan-500/30 to-blue-500/30 backdrop-blur flex items-center justify-center border-b border-white/10">
-              <div className="text-6xl font-bold text-white/20">R1</div>
-            </div>
-
-            {/* 内容区域 */}
-            <div className="relative p-8 text-white">
-              <h3 className="text-3xl font-bold mb-4">SafeWork - R1</h3>
-              <p className="text-cyan-100 leading-relaxed mb-6 min-h-[80px]">
-                通用的安全模型及更安全模型的度量提取，提高更新、数据更正、行为更好、逻辑更可信
-              </p>
-
-              <div className="pt-4 border-t border-white/10 flex gap-4">
-                <button className="px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 font-medium flex items-center gap-2 group-hover:gap-3">
-                  了解更多
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-                <button className="px-6 py-2.5 bg-cyan-500 hover:bg-cyan-600 rounded-lg transition-all duration-300 font-medium">
-                  即刻体验
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
-
-        {/* 其他解决方案 */}
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-2">企业级 AI 治理</h3>
-            <p className="text-slate-600 mb-4 min-h-[60px]">
-              为企业提供完整的 AI 安全治理体系，包括模型风险评估、内容安全审核、合规管理等全流程服务
-            </p>
-            <button className="text-indigo-600 hover:text-indigo-700 font-medium flex items-center gap-1">
-              了解更多
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-2">AI 安全评估</h3>
-            <p className="text-slate-600 mb-4 min-h-[60px]">
-              专业的第三方 AI 安全能力评估服务，帮助企业获取权威认证，提升市场竞争力
-            </p>
-            <button className="text-indigo-600 hover:text-indigo-700 font-medium flex items-center gap-1">
-              了解更多
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-2">AI 合规咨询</h3>
-            <p className="text-slate-600 mb-4 min-h-[60px]">
-              提供全面的 AI 合规咨询服务，协助企业建立符合监管要求的 AI 治理体系
-            </p>
-            <button className="text-indigo-600 hover:text-indigo-700 font-medium flex items-center gap-1">
-              了解更多
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
-export default Solutions;
+export default Home;

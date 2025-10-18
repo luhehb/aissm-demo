@@ -12,7 +12,7 @@ const Nav = ({ currentPage, onNavigate }) => {
   ];
 
   return (
-    <nav className="bg-indigo-700 text-white shadow-lg">
+    <nav className="bg-[#5673B7] text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex">
@@ -38,7 +38,7 @@ const Nav = ({ currentPage, onNavigate }) => {
             <input
               type="text"
               placeholder="请输入关键字搜索"
-              className="px-4 py-2 pr-10 rounded-full bg-indigo-600 text-white placeholder-indigo-200 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+              className="px-4 py-2 pr-10 rounded-full bg-[#FFFFFF] text-white placeholder-indigo-200 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
             <Search className="w-5 h-5 absolute right-3 top-2.5 text-indigo-200" />
           </div>
