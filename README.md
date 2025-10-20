@@ -1,17 +1,34 @@
-# AISMM 前端 Demo —— 使用 npm 启动
+# aissm-demo
 
-## 环境要求
-- Node.js ≥ 18
-- npm（Node 自带）
+最小可运行的前端样式复现（Vite + React + Tailwind）。
 
-## 本地运行（开发模式）
+> 仅做样式与结构演示：顶栏、标题、导航、面包屑，以及 7 个页面的“小标题”骨架。
+
+## 本地运行
+
 ```bash
-# 克隆仓库
-git clone https://github.com/luhehb/aissm-demo.git
-cd aissm-demo
-
-# 安装依赖
+# Node.js >= 18
 npm install
-
-# 启动开发服务器（Vite）
 npm run dev
+# 访问 http://localhost:5173
+```
+
+## 构建与预览
+
+```bash
+npm run build
+npm run preview
+```
+
+## 目录结构（摘）
+
+```
+src/
+  app/           # 路由与布局
+  components/    # Header / Navbar / Breadcrumb / SectionTitle
+  pages/         # 7 个页面骨架
+  styles/        # Tailwind 全局样式
+public/
+  images/        # 占位 Logo
+  icons/         # favicon
+```

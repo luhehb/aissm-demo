@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -43,8 +45,12 @@ const Header = () => {
             <div className="flex lg:justify-end gap-6 lg:gap-8 text-sm lg:text-base font-medium">
               <div className="flex items-center gap-2">
                 <span className="text-amber-300 cursor-pointer hover:text-white transition">立即登录</span>
+                {/*<Link to="/login" className="text-amber-300 hover:text-white transition">*/}
+                {/*  立即登录*/}
+                {/*</Link>*/}
                 <span className="opacity-70">|</span>
                 <span className="cursor-pointer hover:text-white transition">注册</span>
+                {/*<a href="#" className="cursor-pointer hover:text-white transition">注册</a>*/}
               </div>
             </div>
           </div>

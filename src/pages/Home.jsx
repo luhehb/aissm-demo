@@ -1,7 +1,33 @@
+// import React from 'react'
+// import SectionTitle from '../components/SectionTitle.jsx'
+//
+// const Home = () => {
+//   return (
+//     <div>
+//       <SectionTitle title="最新动态" />
+//       <div className="grid md:grid-cols-2 gap-4">
+//         <div className="bg-panel p-4 rounded shadow-card h-32 flex items-center justify-center text-ink-muted">
+//           列表占位（新闻/动态）
+//         </div>
+//         <div className="bg-panel p-4 rounded shadow-card h-32 flex items-center justify-center text-ink-muted">
+//           列表占位（新闻/动态）
+//         </div>
+//       </div>
+//
+//       <SectionTitle title="政策法规" />
+//       <div className="bg-panel p-4 rounded shadow-card h-24 flex items-center justify-center text-ink-muted">
+//         列表占位（政策法规）
+//       </div>
+//     </div>
+//   )
+// }
+//
+// export default Home
+
 // src/pages/Home.jsx
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
-import hero from "./assets/home-hero.png"; // 请替换为你的图片路径，或使用 public 目录：src="/your-image.png"
+import hero from "../../public/images/home-hero.png"; // 请替换为你的图片路径，或使用 public 目录：src="/your-image.png"
 
 const Home = () => {
   return (
@@ -97,3 +123,4 @@ const Home = () => {
 };
 
 export default Home;
+

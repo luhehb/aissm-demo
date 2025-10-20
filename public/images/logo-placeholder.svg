@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+  <rect width="96" height="96" rx="16" fill="#1F3F6F"/>
+  <path d="M22 48c0-14.36 11.64-26 26-26s26 11.64 26 26-11.64 26-26 26S22 62.36 22 48z" fill="#4870B0"/>
+  <path d="M30 48c0-10.493 8.507-19 19-19s19 8.507 19 19-8.507 19-19 19-19-8.507-19-19z" fill="#F09800"/>
+  <text x="48" y="53" text-anchor="middle" font-size="16" font-family="Arial" fill="white">AISMM</text>
+</svg>
