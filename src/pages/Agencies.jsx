@@ -16,6 +16,14 @@ const TABS = [
 // ---------- Mock 数据 ----------
 const evaluationOrgs = [
   {
+    code: 'CMMM-CA-007',
+    name: '中国电子技术标准化研究院',
+    contact: '张敏',
+    phone: '13601000000',
+    type: '评估机构',
+    status: '有效',
+  },
+  {
     code: 'CMMM-CA-001',
     name: '中国软件评测中心（工业和信息化部软件与集成电路促进中心）',
     contact: '李媛智',
@@ -60,14 +68,6 @@ const evaluationOrgs = [
     name: '北京机械工业自动化研究所有限公司',
     contact: '王宁威',
     phone: '13701286149',
-    type: '评估机构',
-    status: '有效',
-  },
-  {
-    code: 'CMMM-CA-007',
-    name: '中国电子技术标准化研究院',
-    contact: '张敏',
-    phone: '13601000000',
     type: '评估机构',
     status: '有效',
   },

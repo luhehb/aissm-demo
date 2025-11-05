@@ -43,15 +43,15 @@ const cards = [
 const Solutions = () => {
   return (
 
-    <main className="w-full min-h-screen bg-black text-white">
-      <section className="bg-black">
+    <main className="w-full min-h-screen bg-white text-black">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             {/* 左侧标题区 */}
             <div className="lg:col-span-4">
               <h1 className="text-4xl md:text-5xl font-semibold">SafeWork</h1>
               <div className="mt-4 h-[2px] w-24 bg-white/40" />
-              <p className="mt-6 text-base leading-7 text-white/70">
+              <p className="mt-6 text-base leading-7 text-black/70">
                 解决 AI 从理论到应用的全生命周期中各阶段风险
               </p>
             </div>

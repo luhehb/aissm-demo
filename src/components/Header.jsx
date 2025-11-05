@@ -31,11 +31,11 @@ const Header = () => {
                   </h1>
                 </div>
 
-                {/* ③ 把“全国平台[切换]”移到两行标题右侧；与标题留 2em 的间距 */}
-                <div className="ml-[2em] mt-1 flex items-center gap-2 text-sm md:text-base font-medium">
-                  <MapPin className="w-4 h-4 text-amber-300" />
-                  <span>全国平台[切换]</span>
-                </div>
+                {/*/!* ③ 把“全国平台[切换]”移到两行标题右侧；与标题留 2em 的间距 *!/*/}
+                {/*<div className="ml-[2em] mt-1 flex items-center gap-2 text-sm md:text-base font-medium">*/}
+                {/*  <MapPin className="w-4 h-4 text-amber-300" />*/}
+                {/*  <span>全国平台[切换]</span>*/}
+                {/*</div>*/}
               </div>
             </div>
           </div>
